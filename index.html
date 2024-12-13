@@ -32,7 +32,7 @@
         </nav>
         <!--toggle icon-->
         <div id="toggleicon">
-            <button><i class="fas fa-sun"></i></button>
+            <button><i class="fas fa-sun" id="sun"></i></button>
         </div>
     </header>
     <!--hero section...-->
@@ -120,6 +120,10 @@
 
         hamburgerMenu.addEventListener('click',()=>{
             navLinks.classList.toggle('active');
+        })
+        var sunIcon = document.getElementById('sun');
+        sunIcon.addEventListener('click',()=>{
+            document.body.classList.toggle('dark')
         })
     </script>
 </body>
