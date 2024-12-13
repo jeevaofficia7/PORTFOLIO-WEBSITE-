@@ -5,11 +5,18 @@
   font-family: sans-serif;
 }
 
-body{
-    background-color: beige;
+/*darkmode styles*/
+.dark #toggleicon button {
+  background-color: blue;
 }
 
-
+body {
+  background-color: beige;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
 img {
   object-fit: cover;
 }
@@ -20,6 +27,7 @@ img {
   padding: 8px 20px;
   border-radius: 20px;
   border: none;
+  background-color: yellow;
 }
 
 #hamburger {
@@ -191,8 +199,8 @@ section article button {
   border-radius: 20px;
 }
 
-section button:hover{
-    background-color: darkblue;
+section button:hover {
+  background-color: darkblue;
 }
 
 /*footer style*/
@@ -243,7 +251,6 @@ footer #sociallink li a {
     text-align: center;
     margin-top: 50px;
     display: none;
-    
   }
 
   #navlinks li {
@@ -251,12 +258,12 @@ footer #sociallink li a {
     padding: 10px;
   }
 
-  #navlinks li a{
+  #navlinks li a {
     display: block;
   }
 
-  #navlinks li:hover{
-background-color: orange;
+  #navlinks li:hover {
+    background-color: orange;
   }
 
   #logo {
@@ -271,7 +278,7 @@ background-color: orange;
     text-align: center;
   }
 
-  main{
+  main {
     flex-grow: 1;
   }
 
@@ -298,52 +305,50 @@ background-color: orange;
   }
 
   /*javsript active class*/
-  #navlinks.active{
+  #navlinks.active {
     display: flex;
   }
 }
 
 /*media query for 650px*/
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
+  header {
+    flex-grow: 1;
+  }
 
-    header{
-        flex-grow: 1;
-    }
+  main img {
+    height: 200px;
+    width: 300px;
+  }
 
-    main img{
-        height: 200px;
-        width: 300px;
-    }
+  main p {
+    text-align: center;
+    padding: 80px;
+  }
 
-    main p{
-        text-align: center;
-        padding: 80px;
-        
-    }
+  aside p {
+    padding: 10px;
+  }
 
-    aside p{
-        padding: 10px;
-    }
+  aside {
+    flex-grow: 1;
+  }
 
-    aside{
-        flex-grow: 1;
-    }
-    
-    main{
-        flex-grow: 1;
-    }
+  main {
+    flex-grow: 1;
+  }
 
-    section img{
-        height: 300px;
-        width: 300px;
-    }
+  section img {
+    height: 300px;
+    width: 300px;
+  }
 
-    footer{
-        font-size: 12px;
-    }
+  footer {
+    font-size: 12px;
+  }
 
-    main  h1 i{
-        display: none;
-    }
+  main h1 i {
+    display: none;
+  }
 }
