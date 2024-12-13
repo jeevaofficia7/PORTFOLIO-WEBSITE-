@@ -9,6 +9,10 @@ body{
     background-color: beige;
 }
 
+.dark{
+  background-color:black;
+}
+
 img {
   object-fit: cover;
 }
