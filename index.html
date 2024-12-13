@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet"  href="/CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--header or navigation bar-->
+    <header>
+        <!--hamburger-menu-->
+        <div id="hamburger">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <!--logo-->
+        <div id="logo">
+            <a href="#">Portfolio Design</a>
+        </div>
+        <!--nav links-->
+        <nav id="navigation">
+            <ul id="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <!--toggle icon-->
+        <div id="toggleicon">
+            <button><i class="fas fa-sun"></i></button>
+        </div>
+    </header>
+    <!--hero section...-->
+    <aside>
+        <img src="images/img1.png" alt="profile-icon">
+        <h2>Iam Jeeva,This is My Portfolio Website</h2>
+        <p>Iam a frontend developer and have skills in HTML,CSS,Javascript to create a responsive website layouts and adding dynamic animation,Iam always ready to learn and improve my skills</p>
+        <div id="title-btn">
+            <button>View Details</button>
+            <button>About Me</button>
+            <button>Read More</button>
+        </div>
+    </aside>
+    <!--My projeccts title..--->
+    <main>
+        <h1>Projects and Description <i class="fas fa-pen"></i></h1>
+        <article>
+            <a href="#">E-COMMERCE WEBISTE <i class="fas fa-earth"></i></a>
+            <img src="images/img3.jpg" alt="ecoomerce">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque incidunt atque, animi similique nesciunt iste ex deserunt, suscipit deleniti nisi quibusdam quisquam, tempora laudantium quidem! Consequatur praesentium consectetur ipsa incidunt!</p>
+        </article>
+        <!--article2-->
+        <article>
+            <a href="#">RESPONSIVE RESTAURANT WEBSITE <i class="fas fa-burger"></i></a>
+            <img src="images/img 9.jpg">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo minima totam aspernatur facilis cumque atque, sint numquam hic officia sapiente qui velit quidem adipisci alias harum sed? Consequatur, aspernatur dolor!</p>
+        </article>
+        <h1 id="skills">Technical Skills <i class="fas fa-computer"></i></h1>
+    </main>
+    <!--my -skills section-->
+    
+    <section>
+        
+        <!--article 1-->
+        <article>
+            <a href="#">Photography</a>
+            <img src="images/img4.jpg" alt="phootography">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, possimus.</p>
+           <button>Click Here</button>
+        </article>
+        <!--article 2-->
+        <article>
+            <a href="#">Programing</a>
+            <img src="images/img8.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, natus.</p>
+            <button>Click Here</button>
+        </article>
+        <!--article 3-->
+        <article>
+            <a href="#">Video Editing</a>
+            <img src="images/img 5.jpg" alt="editing">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eos!</p>
+            <button>Click Here</button>
+        </article>
+    </section>
+    <!---footerrr-->
+    <footer>
+        <div id="sociallink">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-google"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </div>
+        <div id="footerlink">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Supports and Enqueries</a></li>
+            <li><a href="#">Location</a></li>
+        </div>
+        <adress>
+            Jeeva K <br>
+            Rakkiyaplayam Tiruppur 641606 <br>
+            Email:jeeva1293@gamil.com <br>
+            Phone:7550311563 <br>
+        </adress>
+        <!--copy rights-->
+        <p>&copy 2024 All rights reserved.</p>
+    </footer>
+    <!--javascript-->
+    <script>
+        var hamburgerMenu = document.getElementById('hamburger');
+        var navLinks = document.getElementById('navlinks');
+
+        hamburgerMenu.addEventListener('click',()=>{
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
