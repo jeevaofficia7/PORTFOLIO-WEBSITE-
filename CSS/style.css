@@ -1,0 +1,386 @@
+/* Reset and universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+/* Dark mode styles */
+.dark #toggleicon button {
+  background-color: blue;
+  transition: 1s ease;
+}
+
+.dark a {
+  color: #ff6161;
+}
+
+.dark aside img {
+  box-shadow: 0 0 10px 10px rgb(32, 32, 32);
+}
+
+.dark section article p {
+  color: orange;
+}
+
+body {
+  background-color: silver;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  transition: 1s ease;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Hamburger menu */
+#toggleicon button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: yellow;
+}
+
+#hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#hamburger .lines {
+  height: 4px;
+  width: 30px;
+  background-color: orange;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: black;
+  padding: 15px 50px;
+  flex-wrap: wrap;
+}
+
+/* Navigation links */
+#navlinks {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#navlinks li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#navlinks li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#navlinks li a:hover {
+  color: red;
+}
+
+/* Logo */
+#logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* Aside */
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin: 50px;
+  max-width: 90%;
+}
+
+aside p {
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.6;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+aside img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: 30px;
+  border-radius: 200px;
+}
+
+aside #title-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+aside #title-btn button {
+  padding: 12px 20px;
+  background-color: #ff6161;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+aside #title-btn button:hover {
+  background-color: darkred;
+}
+
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 60px;
+  text-align: center;
+}
+
+main img {
+  height: 330px;
+  width: 100%;
+  object-fit: cover;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1; /* Allows articles to grow dynamically */
+}
+
+main article p {
+  width: 100%;
+  max-width: 55rem;
+  line-height: 1.6;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Section */
+section {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 50px;
+  padding: 30px;
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  flex-grow: 1; /* Articles grow dynamically */
+}
+
+section article img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+section article p {
+  width: 100%;
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 12px;
+  text-align: center;
+}
+
+section article button {
+  padding: 10px 15px;
+  background-color: #ff6161;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+section article button:hover {
+  background-color: darkblue;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background-color: #222;
+  padding: 30px 20px;
+  color: white;
+  margin-top: 50px;
+}
+
+footer #footerlink {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+footer #sociallink {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+}
+
+footer #sociallink li a {
+  color: white;
+}
+
+section a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+
+  #navlinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    flex-grow: 1;
+  }
+
+  #navlinks li {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  #navlinks li:hover {
+    background-color: orange;
+  }
+
+  #navlinks.active {
+    display: flex;
+  }
+
+  #navlinks li {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  #logo {
+    align-self: center;
+    text-align: center;
+  }
+
+  #hamburger {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+
+  #toggleicon {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+  }
+
+  aside img {
+    height: 200px;
+    width: 200px;
+  }
+
+  main img {
+    width: 100%;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  aside h2 {
+    width: 30rem;
+  }
+
+  aside p {
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  aside #title-btn {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+  main img {
+    width: 100%;
+    height: 200px;
+  }
+
+  main p {
+    width: 10rem;
+    font-size: 12px;
+  }
+  main h1 {
+    font-size: 30px;
+  }
+
+
+  .sunmove{
+    
+    margin-left: 390px;
+    transition: 1s ease;
+  }
+
+  .hamburgermove{
+    margin-right: 390px;
+    transition: 1s ease;  
+  }
+
+  
+
+}
