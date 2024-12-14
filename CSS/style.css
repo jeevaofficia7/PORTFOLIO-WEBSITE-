@@ -17,6 +17,10 @@ body {
   transition: 1s ease;
 }
 
+.dark header{
+  background-color:  #ff6161;
+  transition: 1s ease;
+}
 .dark a {
   color: #ff6161;
 }
