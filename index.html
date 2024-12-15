@@ -1,130 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="/CSS/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="CSS/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" href="/images/img1.png.png" />
   </head>
   <body>
-    <!--header or navigation bar-->
+    <!--header start--->
     <header>
-      <!--hamburger-menu-->
       <div id="hamburger">
         <div class="lines"></div>
         <div class="lines"></div>
         <div class="lines"></div>
       </div>
-      <!--logo-->
       <div id="logo">
-        <a href="#">Portfolio Design</a>
+        <a href="#">PORTFOLIO</a>
       </div>
-      <!--nav links-->
+      <!--navigation-->
       <nav id="navigation">
         <ul id="navlinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Setting</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#about-section">Skills</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
-      <!--toggle icon-->
-      <div id="toggleicon">
-        <button id="sun"><i class="fas fa-sun"></i></button>
+      <!--button-->
+      <div id="btns">
+        <button id="sun-btn"><i class="fas fa-sun"></i></button>
       </div>
     </header>
-    <!--hero section...-->
-    <aside>
-      <img src="images/img1.png" alt="profile-icon" />
-      <h2>Iam Jeeva,This is My Portfolio Website</h2>
-      <p>
-        Iam a frontend developer and have skills in HTML,CSS,Javascript to
-        create a responsive website layouts and adding dynamic animation,Iam
-        always ready to learn and improve my skills
-      </p>
-      <div id="title-btn">
-        <button>View Details</button>
-        <button>About Me</button>
-        <button>Read More</button>
-      </div>
-    </aside>
-    <!--My projeccts title..--->
-    <main>
-      <h1>Projects and Description <i class="fas fa-pen"></i></h1>
-      <article>
-        <a href="#">E-COMMERCE WEBISTE <i class="fas fa-earth"></i></a>
-        <img src="images/img2.jpg" alt="ecoomerce" />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-          incidunt atque, animi similique nesciunt iste ex deserunt, suscipit
-          deleniti nisi quibusdam quisquam, tempora laudantium quidem!
-          Consequatur praesentium consectetur ipsa incidunt!
-        </p>
-      </article>
-      <!--article2-->
-      <article>
-        <a href="#"
-          >RESPONSIVE RESTAURANT WEBSITE <i class="fas fa-burger"></i
-        ></a>
-        <img src="images/img 9.jpg" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
-          minima totam aspernatur facilis cumque atque, sint numquam hic officia
-          sapiente qui velit quidem adipisci alias harum sed? Consequatur,
-          aspernatur dolor!
-        </p>
-      </article>
-      <h1 id="skills">Technical Skills <i class="fas fa-computer"></i></h1>
-    </main>
-    <!--my -skills section-->
 
-    <section>
-      <!--article 1-->
-      <article>
-        <a href="#">Photography skill</a>
-        <img src="images/img4.jpg" alt="phootography" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, tenetur
-          fugit. Reiciendis temporibus, fugit numquam perspiciatis placeat amet
-        </p>
-        <button>Click Here</button>
-      </article>
-      <!--article 2-->
-      <article>
-        <a href="#">Programing skill</a>
-        <img src="images/img8.jpg" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          magnam iure temporibus amet officiis esse voluptas molestias pariatur!
-        </p>
-        <button>Click Here</button>
-      </article>
-      <!--article 3-->
-      <article>
-        <a href="#">Video Editing skill</a>
-        <img src="images/img 5.jpg" alt="editing" />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          alias tempora, incidunt aliquid facilis facere sapiente modi
-          distinctio.
-        </p>
-        <button>Click Here</button>
-      </article>
+    <!--home section start--------------------->
+    <section id="home-section">
+      <h1>HOME PAGE</h1>
+      <p>Welcome to my portfolio website.Scroll down to explore more!</p>
+      <div id="section-btn">
+        <button>View More</button>
+      </div>
     </section>
-    <!---footerrr-->
-    <footer>
-      <div id="sociallink">
-        <li>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
+
+    <!--hero section start---------------------->
+    <div id="hero-section">
+      <main>
+        <a href="#">THIS IS MY PORTFOLIO</a>
+        <h1>I'am Frotenend Designer Jeeva.K From Tiruppur.</h1>
+        <p>
+          Iam a frontend developer,and Have skills in HTML,CSS,Javascript to
+          create a responsive website and add dynamic animation for enhance user
+          experience.
+        </p>
+        <!--btndiv---------------------------->
+        <div id="btns2">
+          <button id="contact">
+            Contact Me <i class="fas fa-calling"></i>
+          </button>
+        </div>
+      </main>
+      <aside id="image-container">
+        <img
+          src="/images/vecteezy_businessman-isolated-illustration_24344088.png"
+          height="300px"
+          width="300px"
+          alt=""
+          id="pic"
+        />
+      </aside>
+      <!--social icons------------------------>
+      <ul id="social-icon">
         <li>
           <a href="#"><i class="fab fa-google"></i></a>
         </li>
@@ -132,48 +83,156 @@
           <a href="#"><i class="fab fa-whatsapp"></i></a>
         </li>
         <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
           <a href="#"><i class="fab fa-twitter"></i></a>
         </li>
-      </div>
-      <div id="footerlink">
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Terms and conditions</a></li>
-        <li><a href="#">Supports and Enqueries</a></li>
-        <li><a href="#">Location</a></li>
-      </div>
-      <adress>
+        <li>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!--about section start------------------------>
+    <section id="about-section">
+      <h1>ABOUT ME</h1>
+      <p>
+        This section is about me.Hre,I Share information about my background and
+        skills.
+      </p>
+      <ul id="skills">
+        <li>HTML <i class="fab fa-html5"></i></li>
+        <li>CSS <i class="fa-brands fa-css3"></i></li>
+        <li>JAVASCRIPT <i class="fa-brands fa-js"></i></li>
+      </ul>
+      <button>View More</button>
+    </section>
+
+    <!---skill section start---------------->
+    <section id="skills-container">
+      <!--article 1-------------------------->
+      <article>
+        <a href="#">Photgraphy</a>
+        <img src="/images/img5.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab alias
+          quia voluptate nam, laborum repudiandae sapiente sunt eveniet nobis.
+        </p>
+        <button>View Details</button>
+      </article>
+      <!--artcile 2------------------------->
+      <article>
+        <a href="#">Programming</a>
+        <img src="/images/img4.webp" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          officiis harum sed expedita quis possimus, veniam quo? Repellat, dolor
+          eligendi!
+        </p>
+        <button>View Details</button>
+      </article>
+      <!--artiicle 3--------------------------->
+      <article>
+        <a href="#">Editing</a>
+        <img src="/images/img6.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          consectetur debitis, consequuntur doloremque quibusdam corporis
+          impedit quod ratione iste magnam.
+        </p>
+        <button>View Details</button>
+      </article>
+    </section>
+
+    <!--contact section---------------------------->
+    <section id="contact-section">
+      <h2>CONTACT</h2>
+      <p>
+        If You'd like to reah out,feel free to contact me via email or social
+        media
+      </p>
+      <ul id="contact-way">
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-google"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </section>
+
+    <!--footer section start--------------------->
+    <footer>
+      <!--social links-->
+      <nav id="scoial-navigation">
+        <ul id="sociallink">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Whatsapp</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Google</a></li>
+        </ul>
+      </nav>
+      <!--footer links-->
+      <nav id="footer-navigation">
+        <ul id="footerlink">
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Help&Support</a></li>
+        </ul>
+      </nav>
+      <address>
         Jeeva K <br />
-        Rakkiyaplayam Tiruppur 641606 <br />
-        Email:jeeva1293@gamil.com <br />
-        Phone:7550311563 <br />
-      </adress>
+        Rakkiyapalayam Tiruppur <br />
+        Phone:7550411563 <br />
+        Email: <a href="#">jeeva1293@gmail.com</a>
+      </address>
       <!--copy rights-->
-      <p>&copy 2024 All rights reserved.</p>
+      <p>&copy 2024 All rights Reserved.</p>
     </footer>
-    <!--javascript-->
+    <!--javascript....-->
     <script>
+      // selecting elements by id..
+      var contactBtn = document.getElementById("contact");
+      var imagePic = document.getElementById("pic");
+
+      //array of image sources..
+      var allImages = ["/images/img8.png"];
+
+      function changeImage() {
+        var randomIndex = Math.floor(Math.random() * allImages.length);
+
+        //set the image soure to the randommly selected image.
+        imagePic.src = allImages[randomIndex];
+      }
+
+      //addEventListener for button..
+      contactBtn.addEventListener("click", changeImage);
+
+      //dark mode...
+      var sunBtn = document.getElementById("sun-btn");
+      sunBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+
+      //hamburgerMenu active..
+
       var hamburgerMenu = document.getElementById("hamburger");
-      var navLinks = document.getElementById("navlinks");
+      var navlinks = document.getElementById("navlinks");
 
       hamburgerMenu.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-
-      var sunIcon = document.getElementById("sun");
-      sunIcon.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-        if (document.body.classList.contains("dark")) {
-          sunIcon.innerHTML = "<i class='fas fa-moon'></i>";
-        } else {
-          sunIcon.innerHTML = "<i class='fas fa-sun'></i>";
-        }
-      });
-
-      //sunmove function...
-      sunIcon.addEventListener("click", () => {
-        sunIcon.classList.toggle("sunmove");
-        hamburgerMenu.classList.toggle("hamburgermove");
+        navlinks.classList.toggle("active-hamburger");
       });
     </script>
   </body>
