@@ -8,6 +8,25 @@
   font-family: "Poppins", sans-serif;
 }
 
+/*style for dark mode moon-btn*/
+.dark #sun-btn {
+  background-color: blue;
+}
+.dark #sun-btn i {
+  color: white;
+}
+
+/*style for sun btn*/
+#sun-btn {
+  padding: 5px 20px;
+  border-radius: 30px;
+  background-color: yellow;
+  transition: 1s all linear;
+  outline: none;
+}
+#sun-btn i {
+  color: black;
+}
 
 /*style for hamburger*/
 #hamburger {
@@ -138,7 +157,8 @@ aside {
   top: 7.4%;
 }
 #hero-section {
-  background: linear-gradient(rgba(0, 0, 1, 0.295),rgba(0, 0, 0, 0.11)),url(img8.jpg);
+  background: linear-gradient(rgba(0, 0, 1, 0.295), rgba(0, 0, 0, 0.11)),
+    url(img8.jpg);
   background-position: cover;
   object-fit: cover;
   background-size: cover;
@@ -333,7 +353,6 @@ footer ul {
     max-width: 600px;
     height: 400px;
   }
- 
 }
 
 @media screen and (max-width: 830px) {
@@ -372,11 +391,11 @@ footer ul {
   }
 }
 
-@media screen and (max-width:768px) {
-  header{
+@media screen and (max-width: 768px) {
+  header {
     font-size: 12px;
   }
-  #home-section p{
+  #home-section p {
     width: 25rem;
     text-align: center;
   }
@@ -416,12 +435,13 @@ footer ul {
     display: none;
   }
 
-  section{
+  section {
     gap: 50px;
   }
   #navlinks.active-hamburger {
     display: flex;
-    transform: 0.5s all linear;
+    transition: 0.5s all linear;
+    animation: bounce 1s linear;
   }
 }
 
@@ -446,6 +466,18 @@ footer ul {
     width: 20rem;
   }
 
+  /*sun button move*/
+  .move {
+    margin-right: 450px;
+    transition: 1s all linear;
+    animation: bounce 1s linear;
+  }
+  .move2 {
+    margin-left: 460px;
+    transition: all 1s linear;
+    animation: bounce 1s linear;
+  }
+
   #contact-section p {
     width: 25rem;
   }
@@ -465,63 +497,127 @@ footer ul {
   }
 }
 
+@media screen and (max-width: 530px) {
+  .move {
+    margin-right: 430px;
+    transition: 1s all linear;
+    animation: bounce 1s linear;
+  }
+  .move2 {
+    margin-left: 440px;
+    transition: all 1s linear;
+    animation: bounce 1s linear;
+  }
+}
+
 /*smaller phone size*/
 
-@media screen and (max-width:480px) {
-  body{
+@media screen and (max-width: 490px) {
+  body {
     outline: 1px solid red;
   }
 
-  main p{
+  .move {
+    margin-right: 390px;
+    transition: 1s all linear;
+    animation: bounce 1s linear;
+  }
+  .move2 {
+    margin-left: 400px;
+    transition: all 1s linear;
+    animation: bounce 1s linear;
+  }
+
+  main p {
     width: 25rem;
   }
-  
-  #about-section p{
+
+  #about-section p {
     width: 20rem;
   }
 
-  #contact-section p{
+  #contact-section p {
     width: 20rem;
   }
   #contact-section {
     font-size: 15px;
   }
 
-  section article button{
+  section article button {
     max-width: 80%;
   }
 
-  section article img{
+  section article img {
     width: 350px;
     height: 300px;
   }
 
-  section article p{
+  section article p {
     width: 20rem;
   }
 }
 
+/*media query* 450px*/
+
+@media screen and (max-width: 470px) {
+  .move {
+    margin-right: 390px;
+    transition: 1s all linear;
+    animation: bounce 1s linear;
+  }
+  .move2 {
+    margin-left: 400px;
+    transition: all 1s linear;
+    animation: bounce 1s linear;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .move {
+    margin-right: 355px;
+    transition: 1s all linear;
+    animation: bounce 1s linear;
+  }
+  .move2 {
+    margin-left: 360px;
+    transition: all 1s linear;
+    animation: bounce 1s linear;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .move {
+    margin-right: 305px;
+    transition: 1s all linear;
+    animation: bounce 1s linear;
+  }
+  .move2 {
+    margin-left: 330px;
+    transition: all 1s linear;
+    animation: bounce 1s linear;
+  }
+}
+
 /*medida query for smallest screen*/
-@media screen and (max-width:405px) {
-  
-  main p{
+@media screen and (max-width: 405px) {
+  main p {
     width: 20rem;
     font-size: 15px;
   }
 
-  #home-section p{
+  #home-section p {
     width: 20rem;
   }
 
-  #home-section{
+  #home-section {
     font-size: 15px;
   }
 
-  footer{
+  footer {
     font-size: 10px;
   }
 
-  #contact-section p{
+  #contact-section p {
     width: 15rem;
   }
 
@@ -529,10 +625,62 @@ footer ul {
     font-size: 12px;
   }
 
-  #about-section{
+  #about-section {
     font-size: 12px;
   }
 }
 
+@media screen and (max-width: 380px) {
+  .move {
+    margin-right: 300px;
+    transition: 1s all linear;
+    animation: bounce 1s linear;
+  }
+  .move2 {
+    margin-left: 300px;
+    transition: all 1s linear;
+    animation: bounce 1s linear;
+  }
+}
 
+/*keyframes*/
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.home-section-style {
+  font-weight: 600;
+  animation: rotateText 1s linear;
+  transition: all 1s linear;
+}
+
+/*key frames for roatate the text*/
+@keyframes rotateText {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotateY(150deg);
+  }
+  80% {
+    transform: scale(1);
+  }
+}
