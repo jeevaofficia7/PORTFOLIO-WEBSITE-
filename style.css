@@ -367,7 +367,17 @@ footer ul {
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width:768px) {
+  header{
+    font-size: 12px;
+  }
+  #home-section p{
+    width: 25rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
   #home-section p {
     width: 25rem;
     text-align: center;
@@ -401,6 +411,9 @@ footer ul {
     display: none;
   }
 
+  section{
+    gap: 50px;
+  }
   #navlinks.active-hamburger {
     display: flex;
     transform: 0.5s all linear;
@@ -446,5 +459,75 @@ footer ul {
     font-size: 18px;
   }
 }
+
+/*smaller phone size*/
+
+@media screen and (max-width:480px) {
+  body{
+    outline: 1px solid red;
+  }
+
+  main p{
+    width: 25rem;
+  }
+  
+  #about-section p{
+    width: 20rem;
+  }
+
+  #contact-section p{
+    width: 20rem;
+  }
+  #contact-section {
+    font-size: 15px;
+  }
+
+  section article button{
+    max-width: 80%;
+  }
+
+  section article img{
+    width: 350px;
+    height: 300px;
+  }
+
+  section article p{
+    width: 20rem;
+  }
+}
+
+/*medida query for smallest screen*/
+@media screen and (max-width:405px) {
+  
+  main p{
+    width: 20rem;
+    font-size: 15px;
+  }
+
+  #home-section p{
+    width: 20rem;
+  }
+
+  #home-section{
+    font-size: 15px;
+  }
+
+  footer{
+    font-size: 10px;
+  }
+
+  #contact-section p{
+    width: 15rem;
+  }
+
+  #contact-section {
+    font-size: 12px;
+  }
+
+  #about-section{
+    font-size: 12px;
+  }
+}
+
 
 
